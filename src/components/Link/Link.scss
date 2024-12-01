@@ -1,0 +1,31 @@
+@use '../../styles/variables' as color;
+
+.text {
+  color: color.$color-black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav__link {
+  &_weight_bold {
+    font-weight: 600;
+  }
+}
+
+.header-nav__link {
+  transition: all 0.2s ease-in-out;
+
+  &:focus {
+    outline: 1px solid color.$color-light-blue;
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav__link {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+  }
+}

@@ -1,0 +1,30 @@
+@use '../../styles/variables' as color;
+
+.button {
+  padding: 15px 40px;
+  border-radius: 3px;
+  color: color.$color-white;
+  background-color:  color.$color-blue;
+  font-size: 15px;
+  line-height: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: color.$color-light-blue;
+  }
+
+  &:active {
+    background-color: color.$color-dark-blue;
+  }
+
+  &:focus {
+    outline: 1px solid color.$color-light-blue;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    background-color: color.$color-light-gray;
+  }
+}

@@ -1,0 +1,97 @@
+@use '../../styles/variables' as color;
+
+.nav {
+  width: 580px;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-nav__item {
+  &:hover{
+    color: color.$color-blue;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+    background-color: color.$color-blue;
+  }
+
+  &:active{
+    color: color.$color-light-blue;
+  }
+
+  &_style{
+    &_mobile {
+      width: 100%;
+      transition: color, background-color 0.2s ease-in-out;
+
+      &:hover {
+        color: color.$color-white;
+        background-color: color.$color-blue;
+      }
+    }
+  }
+
+}
+
+.lg-visible {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .lg-visible {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 100;
+  }
+
+  .nav {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    right: 0;
+    top: 104px;
+    background-color: color.$color-white;
+
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 480px) {
+  .nav {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+:export{
+  colorWhite: color;
+}

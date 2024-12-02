@@ -1,0 +1,27 @@
+@use '../../styles/variables' as color;
+
+.articles {
+  padding-top: 80px;
+  padding-bottom: 160px;
+  border-bottom: 1px solid  color.$border-section-color;
+  &__title {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .articles {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 992px) {
+  .articles__title {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .articles {
+    padding-bottom: 40px;
+  }
+}
+

@@ -13,7 +13,6 @@ const Services = ()=> {
                     {
                         servicesData.map(card => {
                             const {svgSrc, title, description} = card;
-                            console.log(svgSrc)
                             return (
                                 <ServiceCard key={title} svgSrc={svgSrc} title={title} description={description} />
                             )

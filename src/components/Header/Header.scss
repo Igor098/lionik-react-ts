@@ -1,6 +1,9 @@
+@use '../../styles/variables' as color;
+
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
+  border-bottom: 1px solid color.$border-section-color;
 }
 
 .header__wrapper {

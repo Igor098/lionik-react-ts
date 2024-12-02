@@ -2,11 +2,13 @@ import styles from './Button.module.scss'
 
 interface Props {
     text: string;
+    style: string;
 }
 
-function Button({text}: Props) {
+function Button({text, style}: Props) {
+    const classes = style.includes('large') && styles.large
     return (
-        <button className={`${styles.button} btn-reset`}>{text}</button>
+        <button className={`${styles.button} ${classes} btn-reset`}>{text}</button>
     )
 }
 

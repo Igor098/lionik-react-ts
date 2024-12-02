@@ -11,7 +11,7 @@ function Header() {
                 <div className="header__wrapper">
                     <Logo />
                     <NavigationDesktop />
-                    <Button text="Free trial"/>
+                    <Button text="Free trial" style={''}/>
                     <NavigationMobile />
                 </div>
             </div>

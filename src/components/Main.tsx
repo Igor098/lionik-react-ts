@@ -1,8 +1,8 @@
-import Hero from "../Hero/Hero";
-import Services from "../Services/Services";
-import Articles from "../Articles/Articles";
-import Contacts from "../Contacts/Contacts";
-import Clients from "../Clients/Clients";
+import Hero from "./Hero/Hero.tsx";
+import Services from "./Services/Services.tsx";
+import Articles from "./Articles/Articles.tsx";
+import Contacts from "./Contacts/Contacts.tsx";
+import Clients from "./Clients/Clients.tsx";
 
 function Main() {
     return (

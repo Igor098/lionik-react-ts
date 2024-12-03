@@ -1,7 +1,7 @@
-export const data = [
+export const headerData = [
     {
         title: "Home",
-        href: "#home",
+        href: "#hero",
     },
     {
         title: "Services",
@@ -119,5 +119,25 @@ export const contactsData = [
         svgSrc: "src/assets/images/Contacts/mail.svg",
         title:"Call Us",
     }
+]
 
+export const clientsData = [
+    {
+        imgSrc: "src/assets/images/clients/john.png",
+        comment: "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.",
+        name:"John Armstrong",
+        post:"Customer"
+    },
+    {
+        imgSrc: "src/assets/images/clients/elizabeth.png",
+        comment: "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.",
+        name:"Elizabeth Martin",
+        post:"Customer"
+    },
+    {
+        imgSrc: "src/assets/images/clients/robin.png",
+        comment: "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.",
+        name:"Robin Soutby",
+        post:"Customer"
+    },
 ]

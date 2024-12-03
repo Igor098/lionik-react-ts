@@ -10,7 +10,7 @@ const Contacts = ()=> {
                 <div className="contacts-wrapper grid">
                     {
                         contactsData.map(card => {
-                            const {svgSrc, title, data,type} = card;
+                            const {svgSrc, title, data, type} = card;
                             return (
                                 <>
                                     {

@@ -1,11 +1,11 @@
 import './Navigation.scss'
 import '../../styles/variables.scss'
-import {data} from '../../assets/data.ts'
-import {useRef, useState} from "react"
-import {useClickAway} from "react-use";
-import {Squash as Hamburger} from 'hamburger-react'
-import {AnimatePresence, motion} from "framer-motion";
-import {RemoveScroll} from 'react-remove-scroll';
+import { headerData } from '../../assets/data.ts'
+import { useRef, useState } from "react"
+import { useClickAway } from "react-use";
+import { Squash as Hamburger } from 'hamburger-react'
+import { AnimatePresence, motion } from "framer-motion";
+import { RemoveScroll } from 'react-remove-scroll';
 import Link from "../Link/Link";
 
 const NavigationMobile = () => {
@@ -14,7 +14,8 @@ const NavigationMobile = () => {
     useClickAway(ref, () => setOpen(false));
     return (
         <RemoveScroll
-            enabled={isOpen}>
+            enabled={isOpen}
+        >
             <div ref={ref} className="hamburger">
                 <Hamburger toggled={isOpen} size={20} toggle={setOpen} color={`#3172B9`} rounded={true}/>
                 <AnimatePresence>
@@ -26,7 +27,7 @@ const NavigationMobile = () => {
                             transition={{ duration: 0.2 }}
                             className="nav">
                             <ul className="nav__list list-reset">
-                                {data.map((route, index) => {
+                                {headerData.map((route, index) => {
                                     const { title, href } = route;
 
                                     return (

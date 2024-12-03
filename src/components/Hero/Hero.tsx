@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 const Hero = () => {
     return (
-        <section className="hero">
+        <section className="hero" id="hero">
             <div className="container">
                 <div className="hero-wrapper">
                     <h1 className="hero__title main-title">This is simply a smarter way to make your legal online</h1>

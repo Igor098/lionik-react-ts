@@ -1,0 +1,90 @@
+@use '../../styles/variables' as color;
+
+.client-card {
+  padding-left: 36px;
+  padding-top: 52px;
+  grid-column: auto / span 4;
+  border: 1px solid color.$border-color;
+  border-radius: 5px;
+
+  &__review-text {
+    max-width: 282px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid color.$border-section-color;
+    margin-bottom: 28px;
+  }
+
+  &__logo {
+    border: 2px solid color.$color-blue;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 17px;
+    line-height: 180%;
+    font-weight: 600;
+  }
+}
+
+.client-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.client-info {
+  display: grid;
+}
+
+@media (max-width: 1200px) {
+
+  .client-card {
+    grid-column: auto / span 4;
+    padding-top: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .client-card {
+    grid-column: auto / span 6;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-card {
+    grid-column: auto / span 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-card {
+    grid-column: auto / span 4;
+  }
+}
+
+@media (max-width: 576px) {
+  .client-card {
+    display: grid;
+    grid-column: 2 / span 6;
+    justify-items: start;
+  }
+
+  .client-card__review-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-card {
+    grid-column: 2 / span 6;
+  }
+}
+
+@media (max-width: 380px) {
+  .client-card {
+    grid-column: auto / span 4;
+  }
+}

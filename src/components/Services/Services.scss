@@ -1,6 +1,8 @@
+@use '../../styles/variables.scss' as color;
+
 .services {
   padding-bottom: 160px;
-  border-bottom: 1px solid var(--border-section-color);
+  border-bottom: 1px solid color.$border-section-color;
 
   &__title {
     text-align: center;

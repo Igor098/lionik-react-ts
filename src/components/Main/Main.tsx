@@ -1,7 +1,8 @@
 import Hero from "../Hero/Hero";
 import Services from "../Services/Services";
-import Articles from "../Articles/Articles.tsx";
-import Contacts from "../Contacts/Contacts.tsx";
+import Articles from "../Articles/Articles";
+import Contacts from "../Contacts/Contacts";
+import Clients from "../Clients/Clients";
 
 function Main() {
     return (
@@ -9,6 +10,7 @@ function Main() {
             <Hero />
             <Services />
             <Articles/>
+            <Clients />
             <Contacts />
         </main>
     )

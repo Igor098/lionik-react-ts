@@ -7,10 +7,10 @@ interface Props {
 }
 
 
-function Link({text, style, href} : Props): JSX.Element {
-    const classes = style === 'bold' && 'nav__link_weight_bold'
+const Link = ({text, style, href} : Props) => {
+    const classes = style.includes('decor') ? 'header-nav__link' : '';
     return (
-        <a href={href} className={`nav__link header-nav__link link-text ${classes}`}>{text}</a>
+        <a href={href} className={`nav__link link-text ${classes}`}>{text}</a>
     );
 }
 

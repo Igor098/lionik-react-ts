@@ -79,7 +79,7 @@ export const articlesData = [
 ]
 export const contactsData = [
     {
-        type: "text",
+        typeField: "text",
         svgSrc: "src/assets/images/Contacts/location_on.svg",
         data:[{
             text: "Duis autem vel eum iriure dolor in hendrerit in vulputate velit.",
@@ -88,7 +88,7 @@ export const contactsData = [
         title:"Visit Us",
     },
     {
-        type: "phone",
+        typeField: "phone",
         data:
             [
                 {
@@ -105,7 +105,7 @@ export const contactsData = [
         title:"Call Us",
     },
     {
-        type: "email",
+        typeField: "email",
         data:[
             {
                 text:  "example@example.com",
@@ -141,3 +141,28 @@ export const clientsData = [
         post:"Customer"
     },
 ]
+
+export const footerData = [
+    {
+        title: "About Us",
+        href: "#",
+    },
+    {
+        title: "Contact Us",
+        href: "#",
+    },
+    {
+        title: "Privacy Policy",
+        href: "#",
+    },
+    {
+        title: "Terms Condition",
+        href: "#",
+    }
+];
+
+export const footerSocial = [
+    "src/assets/images/social/twitter-logo.svg",
+    "src/assets/images/social/linkedin-logo.svg",
+    "src/assets/images/social/mail-logo.svg",
+];

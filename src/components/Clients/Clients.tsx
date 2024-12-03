@@ -1,6 +1,6 @@
 import {clientsData} from "../../assets/data.ts";
 import './Clients.scss'
-import ClientCard from "../ClientCard/ClientCard.tsx";
+import ClientCard from "../ClientCard/ClientCard";
 
 const Clients = () => {
     return (

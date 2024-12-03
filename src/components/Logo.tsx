@@ -1,10 +1,14 @@
-import logo from '../assets/logo.svg'
+import logo from '../assets/images/logo/logo.svg'
+import logoSmall from '../assets/images/logo/logo_small.svg'
 
-function Logo() {
+const Logo = () => {
     return(
-        <div className="header-logo">
-            <a className="header-logo__link" href="#">
-                <img className="header-logo__img" src={logo} alt="логотип"/>
+        <div className="logo">
+            <a className="logo__link" href="#">
+                <picture>
+                    <source srcSet={logoSmall} media="(max-width: 480px)"/>
+                    <img className="logo__img" src={logo} srcSet={logo} alt="логотип"/>
+                </picture>
             </a>
         </div>
     )

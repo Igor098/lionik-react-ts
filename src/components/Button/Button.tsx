@@ -5,7 +5,7 @@ interface Props {
     style: string;
 }
 
-function Button({text, style}: Props) {
+const Button = ({text, style}: Props) => {
     const classes = style.includes('large') && styles.large
     return (
         <button className={`${styles.button} ${classes} btn-reset`}>{text}</button>

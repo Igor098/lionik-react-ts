@@ -35,7 +35,7 @@ const NavigationMobile = () => {
                                             initial={{ scale: 0, opacity: 0 }}
                                             animate={{ scale: 1, opacity: 1 }}
                                             transition={{
-                                                type: "spring",
+                                                typeField: "spring",
                                                 stiffness: 260,
                                                 damping: 20,
                                                 delay: 0.1 + index / 10,

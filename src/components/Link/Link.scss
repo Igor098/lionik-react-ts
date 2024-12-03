@@ -1,20 +1,16 @@
 @use '../../styles/variables' as color;
 
-.text {
-  color: color.$color-black;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .nav__link {
-  &_weight_bold {
-    font-weight: 600;
-  }
+  font-weight: 600;
 }
 
 .header-nav__link {
+  color: color.$color-black;
   transition: all 0.2s ease-in-out;
+
+  &:hover{
+    color: color.$color-blue;
+  }
 
   &:focus {
     outline: 1px solid color.$color-light-blue;

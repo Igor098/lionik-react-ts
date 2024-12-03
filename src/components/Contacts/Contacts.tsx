@@ -1,9 +1,8 @@
 import './Contacts.scss'
 import {contactsData} from "../../assets/data.ts";
-import ContactsCard from "../ContactsCard/ContactsCard.tsx";
-import {Fragment} from "react";
+import ContactsCard from "../ContactsCard/ContactsCard";
 
-const Contacts = ()=> {
+const Contacts = () => {
     return (
         <section className="contacts" id="contacts">
             <div className="container">
@@ -11,9 +10,9 @@ const Contacts = ()=> {
                 <div className="contacts-wrapper grid">
                     {
                         contactsData.map(card => {
-                            const {svgSrc, title, data, type} = card;
+                            const {svgSrc, title, data, typeField} = card;
                             return (
-                                <ContactsCard  svgSrc={svgSrc} title={title} type={type} data={data} />
+                                <ContactsCard key={title} svgSrc={svgSrc} title={title} typeField={typeField} data={data} />
                             )
                         })
                     }

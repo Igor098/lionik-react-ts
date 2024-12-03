@@ -4,7 +4,7 @@ import Articles from "./Articles/Articles.tsx";
 import Contacts from "./Contacts/Contacts.tsx";
 import Clients from "./Clients/Clients.tsx";
 
-function Main() {
+const Main = () => {
     return (
         <main className="main">
             <Hero />

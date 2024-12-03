@@ -1,0 +1,21 @@
+@use '../../styles/variables.scss' as color;
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  &__link:hover .footer-social__img_fill path {
+    fill: color.$color-light-blue;
+  }
+
+  &__link:hover .footer-social__img_stroke path {
+    stroke: color.$color-light-blue;
+  }
+
+  &__link:focus {
+    outline: 1px solid color.$color-light-blue;
+    outline-offset: 2px;
+  }
+
+}

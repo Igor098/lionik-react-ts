@@ -1,6 +1,6 @@
 import './Articles.scss'
 import {articlesData} from "../../assets/data.ts";
-import ArticlesCard from "../ArticlesCard/ArticlesCard.tsx";
+import ArticlesCard from "../ArticlesCard/ArticlesCard";
 
 const Articles = ()=> {
     return (

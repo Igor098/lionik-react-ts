@@ -1,4 +1,3 @@
-import './Navigation.scss'
 import Link from "../Link/Link";
 
 interface Links{
@@ -9,15 +8,15 @@ interface Props {
     links: Array<Links>;
 }
 
-const NavigationDesktop = ({ links }: Props) => {
+const FooterNavigation = ({ links }: Props) => {
     return (
-        <nav className="nav lg-visible">
-            <ul className={`nav__list list-reset`}>
+        <nav className="footer-nav">
+            <ul className={`footer-nav__list list-reset`}>
                 {links.map((route) => {
                     const {title, href} = route;
                     return (
-                        <li key={title} className={`nav__item header-nav__item`}>
-                            <Link text={title} href={ href } style={ "decor" } />
+                        <li key={title} className={`footer-nav__item`}>
+                            <Link text={title} href={href} style=""></Link>
                         </li>
                     );
                 })}
@@ -26,4 +25,4 @@ const NavigationDesktop = ({ links }: Props) => {
     )
 }
 
-export default NavigationDesktop;
+export default FooterNavigation;

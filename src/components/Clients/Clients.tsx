@@ -11,7 +11,7 @@ const Clients = () => {
                     {clientsData.map(card => {
                         const { imgSrc, comment, name, post } = card;
                         return (
-                            <ClientCard imgSrc={imgSrc} comment={comment} name={name} post={post} />
+                            <ClientCard key={name} imgSrc={imgSrc} comment={comment} name={name} post={post} />
                         )
                     })}
                 </div>

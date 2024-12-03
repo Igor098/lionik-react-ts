@@ -10,21 +10,23 @@ interface Data{
 interface Prop {
     svgSrc: string;
     title: string;
-    type:string;
+    type: string;
     data: Array<Data>;
 }
 
 
-const ContactsCard = ({svgSrc, title,type,data}: Prop) => {
+const ContactsCard = ({svgSrc, title, type, data}: Prop) => {
     return (
         <article className="contact-card">
             <div className="contact-card__wrapper">
                 <ReactSVG
                     src={svgSrc}
-                    className="services-card__img"
+                    className="contact-card__img"
                 />
                 <h3 className="contact-card__title title-text">{title}</h3>
-                {type.includes("text")&&
+
+                {
+                    type.includes("text") &&
                     data.map(element => {
                         return (
                             <p key={element.text} className="contact-card__desc card-text">{element.text}</p>
@@ -33,13 +35,25 @@ const ContactsCard = ({svgSrc, title,type,data}: Prop) => {
                     )
                 }
 
-                {(type.includes("email")||type.includes("phone")) &&
+                {
+                    type.includes("phone") &&
                     data.map(el => {
                          return (
                              <a key={el.text} className="contact-card__text card-text" href={el.href}> {el.text}</a>
 
                          )
-                     })}
+                    })
+                }
+
+                {
+                    type.includes("email") &&
+                    data.map(el => {
+                        return (
+                            <a key={el.text} className="contact-card__text card-text" href={el.href}> {el.text}</a>
+
+                        )
+                    })
+                }
             </div>
         </article>
     )

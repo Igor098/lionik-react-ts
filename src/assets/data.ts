@@ -79,7 +79,7 @@ export const articlesData = [
 ]
 export const contactsData = [
     {
-        type:"text",
+        type: "text",
         svgSrc: "src/assets/images/Contacts/location_on.svg",
         data:[{
             text: "Duis autem vel eum iriure dolor in hendrerit in vulputate velit.",
@@ -88,7 +88,7 @@ export const contactsData = [
         title:"Visit Us",
     },
     {
-        type:"phone",
+        type: "phone",
         data:
             [
                 {
@@ -105,7 +105,7 @@ export const contactsData = [
         title:"Call Us",
     },
     {
-        type:"email",
+        type: "email",
         data:[
             {
                 text:  "example@example.com",
@@ -117,7 +117,7 @@ export const contactsData = [
             }
         ],
         svgSrc: "src/assets/images/Contacts/mail.svg",
-        title:"Call Us",
+        title:"Email Us",
     }
 ]
 

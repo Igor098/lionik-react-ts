@@ -1,6 +1,7 @@
 import './Contacts.scss'
 import {contactsData} from "../../assets/data.ts";
 import ContactsCard from "../ContactsCard/ContactsCard.tsx";
+import {Fragment} from "react";
 
 const Contacts = ()=> {
     return (
@@ -12,16 +13,7 @@ const Contacts = ()=> {
                         contactsData.map(card => {
                             const {svgSrc, title, data, type} = card;
                             return (
-                                <>
-                                    {
-                                        type.includes("text")&&
-                                        <ContactsCard key={title} svgSrc={svgSrc} title={title} type={type} data={data} />
-                                    }
-                                    {
-                                        (type.includes("email") || type.includes("phone")) &&
-                                        <ContactsCard key={title} svgSrc={svgSrc} title={title} type={type} data={data} />
-                                    }
-                                </>
+                                <ContactsCard  svgSrc={svgSrc} title={title} type={type} data={data} />
                             )
                         })
                     }

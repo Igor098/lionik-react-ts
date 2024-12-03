@@ -1,0 +1,41 @@
+@use '../../styles/variables' as color;
+
+.contacts {
+  padding-top: 80px;
+  padding-bottom: 160px;
+  border-bottom: 1px solid color.$border-section-color;
+  &__title {
+    margin-bottom: 108px;
+  }
+}
+@media (max-width: 1200px) {
+  .contacts {
+    padding-top: 40px;
+    padding-bottom: 80px;
+   ;
+  }
+  .contacts__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contacts__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .contacts {
+
+    padding-bottom: 40px;
+  }
+  .contacts-wrapper {
+    grid-row-gap: 60px;
+    justify-items: center;
+  }
+}
+
+
+

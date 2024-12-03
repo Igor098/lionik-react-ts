@@ -72,6 +72,52 @@ export const articlesData = [
         textDateTime:"11 Dec 2021",
         description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy",
         title:"Contractors"
+    },
+
+
+
+]
+export const contactsData = [
+    {
+        type:"text",
+        svgSrc: "src/assets/images/Contacts/location_on.svg",
+        data:[{
+            text: "Duis autem vel eum iriure dolor in hendrerit in vulputate velit.",
+            href:""
+        }],
+        title:"Visit Us",
+    },
+    {
+        type:"phone",
+        data:
+            [
+                {
+                    text:"+7 (987) 654-32-10",
+                    href:"tel:+79876543210"
+                },
+                {
+                    text: "+7 (123) 456-78-90",
+                    href: "tel:+71234567890"
+
+                }],
+
+        svgSrc: "src/assets/images/Contacts/phone.svg",
+        title:"Call Us",
+    },
+    {
+        type:"email",
+        data:[
+            {
+                text:  "example@example.com",
+                href: "mailto:example@example.com",
+            },
+            {
+                text: "support@example.com",
+                href: "mailto:support@example.com",
+            }
+        ],
+        svgSrc: "src/assets/images/Contacts/mail.svg",
+        title:"Call Us",
     }
 
 ]

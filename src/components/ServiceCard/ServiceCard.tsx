@@ -12,7 +12,7 @@ const ServiceCard = ({svgSrc, title, description}: Prop) => {
         <article className="services-card">
             <ReactSVG
                 src={svgSrc}
-                className="services-card__img"
+                className="contact-card__img"
             />
             <h3 className="services-card__title title-text">{title}</h3>
             <p className="services-card__desc text">{description}</p>

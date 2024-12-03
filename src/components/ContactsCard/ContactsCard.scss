@@ -1,0 +1,71 @@
+@use '../../styles/variables' as color;
+
+
+.contact-card {
+  width: 210px;
+  grid-column: auto / span 4;
+  display: grid;
+
+  &__wrapper {
+    display: grid;
+  }
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 180%;
+    margin-bottom: 28px;
+  }
+  &__desc {
+    max-width: 210px;
+    font-size: 14px;
+    line-height: 180%;
+  }
+  &__text {
+    width: fit-content;
+    font-size: 14px;
+    line-height: 180%;
+    transition: all 0.2s ease-in-out;
+  }
+  &__text:hover {
+    color: color.$color-light-blue;
+  }
+  &__text:active {
+    color: color.$color-dark-blue;
+  }
+  &__text:focus {
+    outline: 1px solid color.$color-light-blue;
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-card {
+    grid-column: auto / span 4;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-card {
+    grid-column:auto / span 8 ;
+  }
+}
+@media (max-width: 380px) {
+  .contact-card {
+    grid-column: auto / span 4;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
